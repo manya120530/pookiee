@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>get started</title>
+    <link rel="stylesheet" href="getstartp.css">
+    <script src="https://kit.fontawesome.com/9e0ab445c3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="left_header">
+            <div class="logo_container">
+                <img src="logopookiee.html" alt="POOKIEE Logo">
+            </div>
+        </div>
+        <div class="center_header">
+            <select style="width: fit-content;" name="selectcategory" class="center_header_all" onchange="moveSlider(this)">
+                <option value="ALL">ALL</option>
+                <option value="BOYS">BOYS</option>
+                <option value="GIRLS">GIRLS</option>
+                <option value="BRAIN">BRAIN</option>
+                <option value="KIDS">KIDS</option>
+            </select>
+            <input type="text" id="searchBar" placeholder="Search" onkeyup="filterGames()">
+            <button class="center_header_search_btn" ><img src="search_ic-removebg-preview (1).png" height="40px" width="50px"></button>
+        </div>
+        <div class="right_header">
+            <span style="font-family: Arial, Helvetica, sans-serif;"> Play. Win. Repeat. <br></span>
+        </div>
+
+    </div>
+
+    <div class="slider_container">
+        <button id="left"><i class="fas fa-chevron-left" style="font-size: 30px;"></i></button>
+        <div class="slider_main_box">
+
+            <div class="slider_box" style="height: 650px; width: 200px;">
+                <img src="action.html" alt="img1">
+            </div>
+            <div class="slider_box" style="height: 650px; width: 200px;">
+                <img src="racing.html" alt="img7">
+            </div>
+            <div class="slider_box" style="height: 650px; width: 200px;">
+                <img src="fashion.html" alt="img2">
+            </div>
+            <div class="slider_box" style="height: 650px; width: 200px;">
+                <img src="cooking.html" alt="img3">
+            </div>
+            <div class="slider_box" style="height: 650px; width: 200px;">
+                <img src="dressing.html" alt="img4">
+            </div>
+        </div>
+        <button id="right"><i class="fas fa-chevron-right" style="font-size: 30px;"></i></button>
+    </div>
+
+    <div class="product_container" style="height: 650px; width: 100%;">
+        <div class="product_box" style="border-radius: 50%;">
+            <a href="https://ludokinglive.com/">
+                <img src="ludo.jpeg" style="height: 300px; width: 100%; border-radius: 50%; border: 4px solid #3d1d1d;">
+            </a>
+            <center>
+                <button style="color: white; background-color: rgb(96, 96, 200); border: none; border-radius: 5px; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;"> <a href="https://ludokinglive.com/" style="color: white; text-decoration: none;">Play Ludo King Now!</a></button>
+            </center>
+        </div>
+
+        <div class="product_box" style="border-radius: 50%;">
+            <a href="https://sudoku.game/">
+                <img src="Screenshot 2024-04-23 094020.png" style="height: 300px; width: 100%; border-radius: 50%; border: 4px solid #3d1d1d;">
+            </a>
+            <center>
+                <button style="color: white; background-color: rgb(96, 96, 200); border: none; border-radius: 5px; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;"> <a href="https://sudoku.game/" style="color: white; text-decoration: none;">Play Sudoku Now!</a></button>
+            </center>
+        </div>
+
+        <div class="product_box" style="border-radius: 50%;">
+            <a href="https://playtictactoe.org/">
+            <img src="tictactoe2.html" style="height: 300px; width: 100%; border-radius: 50%; border: 4px solid #3d1d1d; ;">
+        </a>
+        <center>
+            <button style="color: white; background-color: rgb(96, 96, 200); border: none; border-radius: 5px; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;"> <a href="https://playtictactoe.org/" style="color: white; text-decoration: none;">Play Tic Tac Toe Now!</a></button>
+        </center>
+        </div>
+        
+
+        <div class="product_box" style="border-radius: 50%;">
+            <a href="https://www.chess.com/play">
+
+            <img src="chess.html" style="height: 300px; width: 100%; border-radius: 50%; border: 4px solid #3d1d1d;">
+        </a>
+        <center>
+            <button style="color: white; background-color: rgb(96, 96, 200); border: none; border-radius: 5px; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;"> <a href="https://www.chess.com/play" style="color: white; text-decoration: none;">Play Chess Now!</a></button>
+        </center>
+        </div>
+
+        <div class="product_box" style="border-radius: 50%;">
+            <a href="https://www.smbgames.be/super-mario-world.php">
+            <img src="supermario.html" style="height: 300px; width: 100%; border-radius: 50%; border: 4px solid #3d1d1d; ">
+        </a>
+        <center>
+            <button style="color: white; background-color: rgb(96, 96, 200); border: none; border-radius: 5px; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;"> <a href="https://www.smbgames.be/super-mario-world.php" style="color: white; text-decoration: none;">Play Super Mario World Now!</a></button>
+        </center>
+        </div>
+
+        <div class="product_box" style="border-radius: 50%;">
+            <a href="https://poki.com/en/g/temple-run-2-jungle-fall">
+            <img src="templogo.html" style="height: 300px; width: 100%; border-radius: 50%; border: 4px solid #3d1d1d;">
+        </a>
+        <center>
+            <button style="color: white; background-color: rgb(96, 96, 200); border: none; border-radius: 5px; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;"> <a href="https://poki.com/en/g/temple-run-2-jungle-fall" style="color: white; text-decoration: none;">Play Temple Run Now!</a></button>
+        </center>
+        </div>
+
+        <div class="product_box" style="border-radius: 50%;">
+            <a href="https://poki.com/en/g/subway-surfers">
+            <img src="subwaysufer.html" style="height: 300px; width: 100%; border-radius: 50%; border: 4px solid #3d1d1d;">
+            
+        </a>
+        <center>
+            <button style="color: white; background-color: rgb(96, 96, 200); border: none; border-radius: 5px; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;"> <a href="https://poki.com/en/g/subway-surfers" style="color: white; text-decoration: none;">Play Subway Surfer Now!</a></button>
+
+            </center>
+        </div>
+        
+        <div class="product_box" style="border-radius: 50%;">
+            <a href="https://www.plonga.com/game/Hill-Climb-Racing-Online-HTML5">
+            <img src="hillclimbrace.html" style="height: 300px; width: 100%; border-radius: 50%; border: 4px solid #3d1d1d;">
+        </a>
+            <center>
+                <button style="color: white; background-color: rgb(96, 96, 200); border: none; border-radius: 5px; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;"> <a href="https://www.plonga.com/game/Hill-Climb-Racing-Online-HTML5" style="color: white; text-decoration: none;">Play Hill Climb Racing Now!</a></button>
+            </center>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="product_container" style="height: 650px; width: 100%;">
+    <div class="product_box" style="border-radius: 50%;">
+        <a href="https://www.bubbleshooter.net/game/candy-crush/">
+            <img src="candycrushlogo.html" style="height: 300px; width: 100%; border-radius: 50%; border: 4px solid #3d1d1d;">
+        </a>
+        <center>
+            <button style="color: white; background-color: rgb(96, 96, 200); border: none; border-radius: 5px; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;"> <a href="https://www.bubbleshooter.net/game/candy-crush/" style="color: white; text-decoration: none;">Play Candy Crush Now!</a></button>
+        </center>
+    </div>
+
+    <div class="product_box" style="border-radius: 50%;">
+        <a href="https://www.crazygames.com/game/fruit-ninja">
+            <img src="FRUITNINJA.HTML" style="height: 300px; width: 100%; border-radius: 50%; border: 4px solid #3d1d1d;">
+        </a>
+        <center>
+            <button style="color: white; background-color: rgb(96, 96, 200); border: none; border-radius: 5px; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;"> <a href="https://www.crazygames.com/game/fruit-ninja" style="color: white; text-decoration: none;">Play Fruit Ninja Now!</a></button>
+        </center>
+    </div>
+
+    <div class="product_box" style="border-radius: 50%;">
+        <a href="https://www.plonga.com/game/Angry-Birds-HTML5-Online">
+        <img src="angrybird.html" style="height: 300px; width: 100%; border-radius: 50%; border: 4px solid #3d1d1d;">
+    </a>
+        <center>
+            <button style="color: white; background-color: rgb(96, 96, 200); border: none; border-radius: 5px; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;"> <a href="https://www.plonga.com/game/Angry-Birds-HTML5-Online" style="color: white; text-decoration: none;">Play Angry Bird Now!</a></button>
+        </center>
+    </div>
+
+    <div class="product_box" style="border-radius: 50%;">
+        <a href="https://www.miniplay.com/game/block-puzzle">
+        <img src="BLOCKPUZZLE.HTML" style="height: 300px; width: 100%; border-radius: 50%; border: 4px solid #3d1d1d;">
+    </a>
+        <center>
+            <button style="color: white; background-color: rgb(96, 96, 200); border: none; border-radius: 5px; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;"> <a href="https://www.miniplay.com/game/block-puzzle" style="color: white; text-decoration: none;">Play Block Puzzle Now!</a></button>
+        </center>
+    </div>
+
+    <div class="product_box" style="border-radius: 50%;">
+    <a href="https://poki.com/en/g/fun-water-sorting">
+
+        <img src="WATERSORT.HTML" style="height: 300px; width: 100%; border-radius: 50%; border: 4px solid #3d1d1d;">
+    </a>
+        <center>
+            <button style="color: white; background-color: rgb(96, 96, 200); border: none; border-radius: 5px; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;"> <a href="https://poki.com/en/g/fun-water-sorting" style="color: white; text-decoration: none;">Play Water Sort Now!</a></button>
+        </center>
+    </div>
+
+    <div class="product_box" style="border-radius: 50%;">
+        <a href="https://yaksgames.com/games/cooking-fever/G998F17CA5">
+
+        <img src="cookingfever.html" style="height: 300px; width: 100%; border-radius: 50%; border: 4px solid #3d1d1d;">
+        </a>
+        <center>
+            <button style="color: white; background-color: rgb(96, 96, 200); border: none; border-radius: 5px; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;"> <a href="https://yaksgames.com/games/cooking-fever/G998F17CA5" style="color: white; text-decoration: none;">Play Cooking Fever Now!</a></button>
+        </center>
+    </div>
+
+    <div class="product_box" style="border-radius: 50%;">
+        <a href="https://www.girlsgogames.com/game/fashion-nail-art">
+        <img src="nails.html" style="height: 300px; width: 100%; border-radius: 50%; border: 4px solid #3d1d1d;">
+        </a>
+        <center>
+            <button style="color: white; background-color: rgb(96, 96, 200); border: none; border-radius: 5px; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;"> <a href="https://www.girlsgogames.com/game/fashion-nail-art" style="color: white; text-decoration: none;">Play Fashion Nail Art Now!</a></button>
+        </center>
+    </div>
+
+    <div class="product_box" style="border-radius: 50%;">
+        <a href="https://www.crazygames.com/game/highschool-mean-girls-3">
+        <img src="fashionshow.html" style="height: 300px; width: 100%; border-radius: 50%; border: 4px solid #3d1d1d;">
+        </a>
+        <center>
+            <button style="color: white; background-color: rgb(96, 96, 200); border: none; border-radius: 5px; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;"> <a href="https://www.crazygames.com/game/highschool-mean-girls-3" style="color: white; text-decoration: none;">Play Fashion Show Now!</a></button>
+        </center>
+    </div>
+</div>
+<br>
+<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+<div class="product_container" style="height: 650px; width: 100%;">
+
+<div class="product_box" style="border-radius: 50%;">
+    <a href="https://skribbl.io/">
+        <img src="drawing.html" style="height: 300px; width: 100%; border-radius: 50%; border: 4px solid #3d1d1d;">
+    </a>
+    <center>
+        <button style="color: white; background-color: rgb(96, 96, 200); border: none; border-radius: 5px; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;"> <a href="https://skribbl.io/" style="color: white; text-decoration: none;">Play Skribbl Now!</a></button>
+    </center>
+</div>
+
+<div class="product_box" style="border-radius: 50%;">
+    <a href="https://cardgames.io/">
+        <img src="cards.html" style="height: 300px; width: 100%; border-radius: 50%; border: 4px solid #3d1d1d;">
+    </a>
+    <center>
+        <button style="color: white; background-color: rgb(96, 96, 200); border: none; border-radius: 5px; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;"> <a href="https://cardgames.io/" style="color: white; text-decoration: none;">Play Card Games Now!</a></button>
+    </center>
+</div>
+
+<div class="product_box" style="border-radius: 50%;">
+    <a href="https://www.bubbleshooter.com/">
+        <img src="bubbleshoot.html" style="height: 300px; width: 100%; border-radius: 50%; border: 4px solid #3d1d1d;">
+    </a>
+    <center>
+        <button style="color: white; background-color: rgb(96, 96, 200); border: none; border-radius: 5px; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;"> <a href="https://www.bubbleshooter.com/" style="color: white; text-decoration: none;">Play Bubble Shooter Now!</a></button>
+    </center>
+</div>
+
+
+<div class="product_box" style="border-radius: 50%;">
+    <a href="https://www.gamepix.com/play/red-ball">
+        <img src="redball.html" style="height: 300px; width: 100%; border-radius: 50%; border: 4px solid #3d1d1d;">
+    </a>
+    <center>
+        <button style="color: white; background-color: rgb(96, 96, 200); border: none; border-radius: 5px; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;"> <a href="https://www.gamepix.com/play/red-ball" style="color: white; text-decoration: none;">Play Red Ball Now!</a></button>
+    </center>
+</div>
+
+<div class="product_box" style="border-radius: 50%;">
+    <a href="https://poki.com/en/g/merge-cakes">
+        <img src="CAKES.HTML" style="height: 300px; width: 100%; border-radius: 50%; border: 4px solid #3d1d1d;">
+    </a>
+    <center>
+        <button style="color: white; background-color: rgb(96, 96, 200); border: none; border-radius: 5px; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;"> <a href="https://poki.com/en/g/merge-cakes" style="color: white; text-decoration: none;">Play Merge Cakes Now!</a></button>
+    </center>
+</div>
+
+<div class="product_box" style="border-radius: 50%;">
+    <a href="https://poki.com/en/g/funny-haircut">
+        <img src="haircut.HTML" style="height: 300px; width: 100%; border-radius: 50%; border: 4px solid #3d1d1d;">
+    </a>
+    <center>
+        <button style="color: white; background-color: rgb(96, 96, 200); border: none; border-radius: 5px; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;"> <a href="https://poki.com/en/g/funny-haircut" style="color: white; text-decoration: none;">Play Funny Haircut Now!</a></button>
+    </center>
+</div>
+
+<div class="product_box" style="border-radius: 50%;">
+    <a href="https://poki.com/en/g/funny-tattoo-shop">
+        <img src="tattoo.html" style="height: 300px; width: 100%; border-radius: 50%; border: 4px solid #3d1d1d;">
+    </a>
+    <center>
+        <button style="color: white; background-color: rgb(96, 96, 200); border: none; border-radius: 5px; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;"> <a href="https://poki.com/en/g/funny-tattoo-shop" style="color: white; text-decoration: none;">Play Tattoo Shop Now!</a></button>
+    </center>
+</div>
+
+<div class="product_box" style="border-radius: 50%;">
+    <a href="https://poki.com/en/g/cozy-room-design">
+        <img src="cozy rom.html" style="height: 300px; width: 100%; border-radius: 50%; border: 4px solid #3d1d1d;">
+    </a>
+    <center>
+        <button style="color: white; background-color: rgb(96, 96, 200); border: none; border-radius: 5px; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;"> <a href="https://poki.com/en/g/cozy-room-design" style="color: white; text-decoration: none;">Play Room Design Now!</a></button>
+    </center>
+</div>
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="product_container" style="height: 650px; width: 100%;">
+
+<div class="product_box" style="border-radius: 50%;">
+<a href="https://poki.com/en/g/cyber-cars-punk-racing">
+    <img src="cyber car.html" style="height: 300px; width: 100%; border-radius: 50%; border: 4px solid #3d1d1d;">
+</a>
+<center>
+    <button style="color: white; background-color: rgb(96, 96, 200); border: none; border-radius: 5px; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;"> <a href="https://poki.com/en/g/cyber-cars-punk-racing" style="color: white; text-decoration: none;">Play Cyber Cars Punk Racing Now!</a></button>
+</center>
+</div>
+
+<div class="product_box" style="border-radius: 50%;">
+<a href="https://poki.com/en/g/zeepkist-crash-2d">
+    <img src="zeepkist.html" style="height: 300px; width: 100%; border-radius: 50%; border: 4px solid #3d1d1d;">
+</a>
+<center>
+    <button style="color: white; background-color: rgb(96, 96, 200); border: none; border-radius: 5px; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;"> <a href="https://poki.com/en/g/zeepkist-crash-2d" style="color: white; text-decoration: none;">Play Zeepkist Crash 2D Now!</a></button>
+</center>
+</div>
+
+<div class="product_box" style="border-radius: 50%;">
+    <a href="https://poki.com/en/g/airport-clash-3d">
+        <img src="airportclash.html" style="height: 300px; width: 100%; border-radius: 50%; border: 4px solid #3d1d1d;">
+    </a>
+    <center>
+        <button style="color: white; background-color: rgb(96, 96, 200); border: none; border-radius: 5px; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;"> <a href="https://poki.com/en/g/airport-clash-3d" style="color: white; text-decoration: none;">Play Airport Clash 3D Now!</a></button>
+    </center>
+</div>
+
+<div class="product_box" style="border-radius: 50%;">
+    <a href="https://poki.com/en/g/narrow-one">
+        <img src="narrow.html" style="height: 300px; width: 100%; border-radius: 50%; border: 4px solid #3d1d1d;">
+    </a>
+    <center>
+        <button style="color: white; background-color: rgb(96, 96, 200); border: none; border-radius: 5px; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;"> <a href="https://poki.com/en/g/narrow-one" style="color: white; text-decoration: none;">Play Narrow One Now!</a></button>
+    </center>
+</div>
+
+<div class="product_box" style="border-radius: 50%;">
+    <a href="https://poki.com/en/g/jetpack-joyride">
+        <img src="jetpack.html" style="height: 300px; width: 100%; border-radius: 50%; border: 4px solid #3d1d1d;">
+    </a>
+    <center>
+        <button style="color: white; background-color: rgb(96, 96, 200); border: none; border-radius: 5px; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;"> <a href="https://poki.com/en/g/jetpack-joyride" style="color: white; text-decoration: none;">Play Jetpack Joyride Now!</a></button>
+    </center>
+</div>
+
+<div class="product_box" style="border-radius: 50%;">
+    <a href="https://poki.com/en/g/puppet-master">
+        <img src="puppet.html" style="height: 300px; width: 100%; border-radius: 50%; border: 4px solid #3d1d1d;">
+    </a>
+    <center>
+        <button style="color: white; background-color: rgb(96, 96, 200); border: none; border-radius: 5px; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;"> <a href="https://poki.com/en/g/puppet-master" style="color: white; text-decoration: none;">Play Puppet Master Now!</a></button>
+    </center>
+</div>
+
+<div class="product_box" style="border-radius: 50%;">
+    <a href="https://poki.com/en/g/woodcraft">
+        <img src="woodcraft.html" style="height: 300px; width: 100%; border-radius: 50%; border: 4px solid #3d1d1d;">
+    </a>
+    <center>
+        <button style="color: white; background-color: rgb(96, 96, 200); border: none; border-radius: 5px; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;"> <a href="https://poki.com/en/g/woodcraft" style="color: white; text-decoration: none;">Play Woodcraft Now!</a></button>
+    </center>
+</div>
+
+<div class="product_box" style="border-radius: 50%;">
+    <a href="https://poki.com/en/g/iron-snout">
+        <img src="snoutt.html" style="height: 300px; width: 100%; border-radius: 50%; border: 4px solid #3d1d1d;">
+    </a>
+    <center>
+        <button style="color: white; background-color: rgb(96, 96, 200); border: none; border-radius: 5px; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;"> <a href="https://poki.com/en/g/iron-snout" style="color: white; text-decoration: none;">Play Iron Snout Now!</a></button>
+    </center>
+</div>
+
+    <script src="getstartp.js"></script>
+</body>
+
+</html>

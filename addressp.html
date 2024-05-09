@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(purple.html);
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: white;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <h1 style="color: white; font-family: Georgia, 'Times New Roman', Times, serif;">ADDRESS</h1>
+    <form action="/submit" method="post" style="background-color: transparent;">
+        <label for="street">Street:</label>
+        <input type="text" id="street" name="street" required>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required>
+
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" required>
+
+        <label for="zip">ZIP Code:</label>
+        <input type="text" id="zip" name="zip" required>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
+
+
+

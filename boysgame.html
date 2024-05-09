@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boy Games</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            background-image: url("getstbg.html");
+            background-position: center;
+            background-size: cover;
+
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .game {
+            width: 100%;
+            height: 100%;
+            background-color: #ffffff;
+            border: 2px solid #dddddd;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: #333333;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .game:hover {
+            transform: scale(1.05);
+        }
+
+        .game-link {
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        .game-link img {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 8px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .game-link:hover img {
+            transform: scale(1.1);
+        }
+        h1 {
+            color: beige;
+            font-weight: bold;
+            font-size: 36px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <center><marquee scrollamount="8"><h1 style="color: rgb(241, 231, 199); font-weight: bold; font-size: 36px;">BOY's ZONE</h1></marquee></center>
+
+    <div class="container">
+
+        <a href="https://www.smbgames.be/super-mario-world.php" class="game-link">
+            <img src="supermario.html" style="height: 250px; width: 100%; border-radius: 0%; border: 4px solid #3d1d1d;">
+            <center><div class="game" style="height: 40px; width:90% ; color: rgb(232, 186, 171); background-color: black;">Super Mario World</div></center>
+        </a>
+        
+        <a href="https://poki.com/en/g/temple-run-2-jungle-fall" class="game-link">
+            <img src="TempleRun.html" style="height: 250px; width: 100%; border-radius: 0%; border: 4px solid #3d1d1d;">
+            <div class="game" style="height: 40px; width:70% ; color: rgb(232, 186, 171); background-color: black;">Temple Run</div>
+        </a>
+
+        <a href="https://poki.com/en/g/subway-surfers" class="game-link">
+            <img src="subwaysufer.html" style="height: 250px; width: 100%; border-radius: 0%; border: 4px solid #3d1d1d;">
+            <div class="game" style="height: 40px; width:70% ;color: rgb(232, 186, 171); background-color: black;">Subway Surfers</div>
+        </a>
+
+        <a href="https://www.plonga.com/game/Hill-Climb-Racing-Online-HTML5" class="game-link">
+            <img src="hillclimbrace.html" style="height: 250px; width: 100%; border-radius: 0%; border: 4px solid #3d1d1d;">
+            <div class="game" style="height: 40px; width:70% ; color: rgb(232, 186, 171); background-color: black;">Hill Climb Race</div>
+        </a>
+
+        <a href="https://poki.com/en/g/cyber-cars-punk-racing" class="game-link">
+            <img src="cyber car.html" style="height: 250px; width: 100%; border-radius: 0%; border: 4px solid #3d1d1d;">
+            <center><div class="game" style="height: 40px; width:90% ; color: rgb(232, 186, 171); background-color: black;">Cyber Car Punk Racing</div></center>
+        </a>
+
+        <a href="https://poki.com/en/g/iron-snout" class="game-link">
+            <img src="snoutt.html" style="height: 250px; width: 100%; border-radius: 0%; border: 4px solid #3d1d1d;">
+            <div class="game" style="height: 40px; width:70% ; color: rgb(232, 186, 171); background-color: black;">Iron Snout</div>
+        </a>
+
+        <a href="https://poki.com/en/g/airport-clash-3d" class="game-link">
+            <img src="airportclash.html" style="height: 250px; width: 100%; border-radius: 0%; border: 4px solid #3d1d1d;">
+            <div class="game" style="height: 40px; width:70% ; color: rgb(232, 186, 171); background-color: black;">Airport Clash 3D</div>
+        </a>
+        
+        <a href="https://poki.com/en/g/narrow-one" class="game-link">
+            <img src="narrow.html" style="height: 250px; width: 100%; border-radius: 0%; border: 4px solid #3d1d1d;">
+            <div class="game" style="height: 40px; width:70% ; color: rgb(232, 186, 171); background-color: black;">Narrow One</div>
+        </a>
+
+        <a href="https://poki.com/en/g/jetpack-joyride" class="game-link">
+            <img src="jetpack.html" style="height: 250px; width: 100%; border-radius: 0%; border: 4px solid #3d1d1d;">
+            <div class="game" style="height: 40px; width:70% ;color: rgb(232, 186, 171); background-color: black;">Jetpack Joyride</div>
+        </a>
+    </div>
+</body>
+</html>

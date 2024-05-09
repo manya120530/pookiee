@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body {
+    background-image: url(newsign.html);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    backdrop-filter: blur(2px); /* Add a blur effect */
+}
+        #formcontainer{
+            width: 300px;
+            height:250px;
+            background-color: black;
+            padding:50px;
+        }
+        input{
+            margin-top:5px;
+        }
+
+        .container {
+            background-color: black;
+            padding: 20px;
+            border: 1px solid white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(12, 12, 12, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            text-align: left;
+            color: aliceblue;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: plum;
+            color: #fff;
+            cursor: pointer;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .error-message {
+            color: red;
+            margin-top: 10px;
+            
+        }
+        .gender-button {
+                width: 150px; 
+                height: 30px; 
+                margin-right: 10px; 
+                font-size: 16px;
+            }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2 style="color: blanchedalmond;">SIGN UP AND START HAVING FUN!</h2>
+    <div id="errorMessage" class="error-message"></div>
+    <form id="signUpForm">
+        <div class="form-group">
+            <label for="name">Username:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+        </div>
+
+        <div class="form-group">
+            <label for="birthday">Birthday Date:</label>
+            <input type="date" id="birthday" name="birthday" required>
+        </div>
+
+        
+        <div class="form-group">
+            <label>Gender:</label><br>
+            <button type="button" id="genderFemale" class="gender-button" onclick="selectGender('female')">Female</button>
+            <button type="button" id="genderMale" class="gender-button" onclick="selectGender('male')">Male</button>
+            <input type="hidden" id="selectedGender" name="gender" required>
+        </div>
+        
+
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+
+        <div class="form-group">
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+        </div>
+
+        <div class="form-group">
+            <button style="height: 40px; width: 65%; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; background-color: rgb(252, 165, 226);">
+                <a href="getstartp.html" style="font-weight: bold; font-size: 16px; color: black; text-decoration: none;">SUBMIT</a>
+            </button>        </div>
+    </form>
+</div>
+
+<script src="signup.js"></script>
+</body>
+</html>

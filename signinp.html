@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <style>
+        body {
+    background-image: url(newsign.html);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    backdrop-filter: blur(2px); 
+}
+
+        #formcontainer {
+            width: 300px;
+            height: 250px;
+            background-color: black;
+            padding: 50px;
+        }
+        input {
+            margin-top: 5px;
+        }
+
+        .container {
+            background-color: black;
+            padding: 20px;
+            border: 1px solid white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(12, 12, 12, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            text-align: left;
+            color: aliceblue;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: plum;
+            color: #fff;
+            cursor: pointer;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .error-message {
+            color: red;
+            margin-top: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2 style="color: blanchedalmond;">Log In</h2>
+    <div id="errorMessage" class="error-message"></div>
+    <form id="signInForm">
+        <div class="form-group">
+            <label for="usernameOrPhone">Username or Phone:</label>
+            <input type="text" id="usernameOrPhone" name="usernameOrPhone" required>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+
+        <div class="form-group">
+            <a href="#" style="color: aliceblue; text-decoration: none; float: right;">Forgot Password?</a>
+        </div>
+
+        <div class="form-group">
+            <button style="height: 40px; width: 58%; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; background-color: rgb(252, 165, 226);">
+                <a href="getstartp.html" style="font-weight: bold; font-size: 16px; color: black; text-decoration: none;">Login</a>
+            </button>
+                    </div>
+    </form>
+</div>
+
+<script src="sigin.js"></script>
+
+</body>
+</html>
